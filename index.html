@@ -1,0 +1,57 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <lable>Product Id</lable><label class="validation-error hide" id="ProductIdValidationError">
+                        <input type="text" name="ProductId" id="ProductId">
+                    </div>
+                    <div>
+                        <lable>Product Name</lable>
+                        <input type="text" name="ProductName" id="ProductName">
+                    </div>
+                    <div>
+                        <lable>Category Id</lable>
+                        <input type="text" name="CategoryId" id="CategoryId">
+                    </div>
+                    <div>
+                        <lable>Category Name</lable>
+                        <input type="text" name="CategoryName" id="CategoryName">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="productlist">
+                    <thead>
+                        <tr>
+                            <th>Product Id</th>
+                            <th>Product Name</th>
+                            <th>Category Id</th>
+                            <th>Category Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
